@@ -18,10 +18,10 @@ load_dotenv()
 app = Flask(__name__)
 
 # --- Configuration appareils (via .env) ---
-TAPO_EMAIL    = os.getenv("TAPO_EMAIL")
-TAPO_PASSWORD = os.getenv("TAPO_PASSWORD")
-P100_IP       = os.getenv("P100_IP", "172.25.167.101")
-C225_IP       = os.getenv("C225_IP", "172.25.167.43")
+TAPO_EMAIL    = os.getenv("TAPO_EMAIL")     # Requis dans .env
+TAPO_PASSWORD = os.getenv("TAPO_PASSWORD")  # Requis dans .env
+P100_IP       = os.getenv("P100_IP")        # Requis dans .env
+C225_IP       = os.getenv("C225_IP")        # Requis dans .env
 
 # URL RTSP de la Tapo C225 (credentials URL-encodés)
 from urllib.parse import quote
